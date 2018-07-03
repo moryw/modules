@@ -1,4 +1,4 @@
-const Airplane = {};
+//const Airplane = {};
 
 module.exports = {
   myAirplane: "CloudJet",
