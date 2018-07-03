@@ -4,4 +4,4 @@ Airplane.myAirplane = "StarJet";
 
 module.exports = Airplane;
 
-console.log(Airplane.myAirplane);
+//console.log(Airplane.myAirplane);
