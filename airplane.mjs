@@ -13,9 +13,9 @@
 //
 // export default Airplane;
 
-let Airplane
+export let Airplane
 
-let availableAirplanes = [{
+export let availableAirplanes = [{
     name: 'AeroJet',
     fuelCapacity: 800,
     availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
@@ -31,11 +31,12 @@ let availableAirplanes = [{
   }
 ];
 
-let flightRequirements = {
+export let flightRequirements = {
   requiredStaff: 4,
+  requiredSpeedRange: 700
 };
 
-function meetsStaffRequirements(availableStaff, requiredStaff) {
+export function meetsStaffRequirements(availableStaff, requiredStaff) {
   if (availableStaff.length >= requiredStaff) {
     return true;
   } else {
@@ -43,7 +44,16 @@ function meetsStaffRequirements(availableStaff, requiredStaff) {
   }
 };
 
-export {availableAirplanes, flightRequirements, meetsStaffRequirements};
+export function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
+  let range = maxSpeed - minSpeed;
+  if (range > requiredSpeedRange) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+
 
 
 
