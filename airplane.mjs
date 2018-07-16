@@ -13,7 +13,7 @@
 //
 // export default Airplane;
 
-export let Airplane
+// export let Airplane
 
 export let availableAirplanes = [{
     name: 'AeroJet',
