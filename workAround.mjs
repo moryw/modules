@@ -1,5 +1,8 @@
+import Employee from './employee.mjs'
+import {getCadre, calculateTax, getBenefits, calculateBonus, reimbursementEligibility} from './employee.mjs';
+
 function getEmployeeInformation(inputSalary) {
-  salary = inputSalary;
+  Employee.salary = inputSalary;
   console.log('Cadre: ' + getCadre());
   console.log('Tax: ' + calculateTax());
   console.log('Benefits: ' + getBenefits());
