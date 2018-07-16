@@ -54,10 +54,19 @@ MessageMixer.encode = function(string) {
 
 MessageMixer.palindrome = function(str) {
   return `${str} ${this.reverseWord(str)}`;
+};
+
+MessageMixer.pigLatin = function(sentence, character) {
+  let words = sentence.split(" ");
+    for (let i = 0; i < words.length; i++) {
+      words[i] = character + words[i];
+    }
+   return words.join(" ");
 }
 
-module.exports = MessageMixer;
+export default MessageMixer; //export default
+// module.exports = MessageMixer; //common js
 
-//console.log(MessageMixer.palindrome('test'));
+// console.log(MessageMixer.pigLatin("This is a test!", 'f'));
 
 //end
