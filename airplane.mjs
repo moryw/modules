@@ -15,16 +15,19 @@
 
 let Airplane
 
-let availableAirplanes = [
-  {
+let availableAirplanes = [{
     name: 'AeroJet',
     fuelCapacity: 800,
-    availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators']
+    availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
+    maxSpeed: 1200,
+    minSpeed: 300
   },
   {
     name: 'Skyjet',
     fuelCapacity: 500,
-    availableStaff: ['pilots', 'flightAttendants']
+    availableStaff: ['pilots', 'flightAttendants'],
+    maxSpeed: 800,
+    minSpeed: 200
   }
 ];
 
